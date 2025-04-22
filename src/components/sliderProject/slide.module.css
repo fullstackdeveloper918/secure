@@ -1,0 +1,72 @@
+.content-row {
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.clapat-slider-wrapper {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.clapat-slider-viewport {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.clapat-slide {
+  flex: 0 0 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.clapat-slide-active {
+  opacity: 1;
+}
+
+.slide-img img {
+  width: 100%;
+  height: auto;
+}
+
+.clapat-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.slider-button-prev:hover,
+.slider-button-next:hover {
+  background-color: #555;
+}
+
+.clapat-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.clapat-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.clapat-pagination-bullet-active {
+  background-color: #333;
+}

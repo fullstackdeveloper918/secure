@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./public/assets/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/utils/scroll-magic.js",
+    "src/app/page.jsx",
+    "src/app/layout.jsx",
+    "src/components/award/award-one.jsx",
+    "src/components/project/project-text-line.jsx",
+    "src/components/team/team-one.jsx",
+    "src/components/team/team-item.jsx",
+    "src/components/testimonial/testimonial-one.jsx",
+    "src/components/project/project-one.jsx",
+    "src/pages/homes/homes-1.jsx",
+    "src/app/(about)/about-us/page.jsx",
+    "src/pages/about/about-us.jsx",
+    "src/components/about/about-us-hero.jsx",
+    "src/components/about/about-us-area.jsx",
+    "src/components/about/about-four.jsx",
+    "src/components/about/about-three.jsx",
+    "src/components/fun-fact/fun-fact-one.jsx",
+    "src/app/Why-Choose-Us/page.jsx",
+    "src/pages/whychooseus/whychooseus.jsx",
+    "src/components/faq/faq-area.jsx",
+    "src/components/faq/faq-item.jsx",
+    "src/components/service/service-four.jsx",
+    "src/components/big-text.jsx",
+    "src/pages/service/service.jsx",
+    "src/app/(service)/service/page.jsx",
+    "src/components/service/service-hero.jsx",
+    "src/components/service/service-five.jsx",
+    "src/components/service/service-six.jsx",
+    "src/components/brand/brand-two.jsx",
+    "src/pages/about/about-me.jsx",
+    "src/app/(contact)/contact/page.jsx",
+    "src/pages/contact/contact.jsx",
+    "src/components/contact/contact-location-2.jsx",
+    "src/components/contact/contact-location.jsx",
+    "src/pages/service/service-details.jsx",
+    "src/components/service/service-details-area.jsx",
+    "src/components/service/service-three.jsx"
+  ],
+  "exclude": ["node_modules"]
+}

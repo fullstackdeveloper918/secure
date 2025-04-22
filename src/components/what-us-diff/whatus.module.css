@@ -1,0 +1,152 @@
+/* Pain Section */
+.painSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.painTitle {
+  font-weight: bold;
+  transition:
+    font-size 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+/* Black Section */
+.blackSection {
+  /* height: 100vh; */
+  background-color: #101010;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 80px 0px;
+}
+
+.blackTitle {
+  font-size: 3vw;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Cards */
+.cardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 0px 20px;
+}
+
+.card {
+  /* background-color: #1a1a1a; */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 4rem 2rem;
+  max-width: 100%;
+  text-align: left;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardIcon {
+  margin-bottom: 15px;
+  width: 55px;
+  height: 55px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  margin: 10px 0px;
+  color: #fff;
+  line-height: 2.2rem;
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.7rem;
+}
+.blacksec h2 {
+  font-size: 4vw;
+}
+.blacksec .sliderSec > div > div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cardtitile {
+  font-size: 1.3vw !important;
+  text-align: left;
+  line-height: 1.7vw !important;
+  font-weight: 500 !important;
+}
+.cardDecription {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+@media (max-width: 1440px) {
+  .card {
+    padding: 2rem 1rem;
+  }
+  .cardDescription {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+  .cardTitle {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .cardIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .blackSection {
+    padding: 60px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blackTitle {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 0px;
+    padding: 0px 15px;
+  }
+
+  .painTitle {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+  .painTitle {
+    font-size: 24px !important;
+  }
+}
