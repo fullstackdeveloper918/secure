@@ -3,6 +3,8 @@ import localFont from 'next/font/local';
 import { ThemeProvider } from 'next-themes';
 import './globals.scss';
 import './globals.css';
+import 'normalize.css';
+
 import Script from 'next/script';
 import ClientWrapper from '../components/ClientWrapper';
 // Local font
