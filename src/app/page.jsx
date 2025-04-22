@@ -93,7 +93,7 @@ export default function Home() {
           <main>
             <SecureSection />
             <ProjectSix />
-            <div className="container-fluid p-0">
+            {/* <div className="container-fluid p-0">
               <div className="row g-0">
                 <div className="col-xl-12">
                   <ProjectTextLine data={data} />
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
 
-            <TeamOne data={data} />
+            <TeamOne data={data} /> */}
             <TestimonialOne data={data} />
             <div className="awardsSec">
               <BlogOne />
