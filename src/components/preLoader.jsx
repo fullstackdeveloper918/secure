@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTypewriter } from 'react-simple-typewriter';
+import React from 'react'
+import { Typewriter } from 'react-simple-typewriter'
 
 const TEXTS = [
   'Brewing some cool things',
@@ -9,35 +9,32 @@ const TEXTS = [
 ];
 
 const PreLoader = () => {
-  const [index, setIndex] = React.useState(0);
-  const [isLoadingComplete, setIsLoadingComplete] = React.useState(false);
 
-  const [text] = useTypewriter({
-    words: [TEXTS[index]],
-    loop: false,
-    delaySpeed: 1000,
-    typeSpeed: 100,
-    deleteSpeed: 50,
-  });
+  const handleType = (count) => {
+    console.log('Typing word index:', count);
+  };
 
-  React.useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % TEXTS.length);
-    }, 2000);
-
-    const timeoutId = setTimeout(() => {
-      setIsLoadingComplete(true);
-    }, 8000);
-
-    return () => {
-      clearInterval(intervalId);
-      clearTimeout(timeoutId);
-    };
-  }, []);
+  const handleDone = () => {
+    console.log('Loop finished!');
+  };
 
   return (
-    <div className={`pre-load-main ${isLoadingComplete ? 'slide-up' : ''}`}>
-      <h1>{text}</h1>
+    <div className='pre-load-main'>
+      <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
+        <span style={{ color: 'white', fontWeight: 'bold' }}>
+          <Typewriter
+            words={TEXTS}
+            loop={0}             // Infinite loop
+            cursor
+            // cursorStyle='_'  
+            typeSpeed={70}
+            deleteSpeed={10}
+            delaySpeed={1000}
+            onType={handleType}
+            onLoopDone={handleDone}
+          />
+        </span>
+      </h1>
     </div>
   );
 };

@@ -18,6 +18,7 @@ export default function Home() {
     <ClientWrapper>
       {(data) => (
         <div id="clapat-page-content" className="dark-content" data-bgcolor="#ebebeb">
+          {console.log(data,"sfsadfasd") }
           <div id="content-scroll">
             <div id="main">
               <HeroSectionMain />

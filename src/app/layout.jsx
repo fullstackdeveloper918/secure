@@ -115,7 +115,10 @@ export default function RootLayout({ children }) {
         className={`${gellery.variable} ${aladin.variable} ${syne_body.variable} ${syne_heading.variable} ${syne_p.variable} ${syne.variable} ${big_shoulders.variable} ${marcellus.variable}`}
       >
         <ThemeProvider defaultTheme="light">
-          <ClientWrapper>{children}</ClientWrapper>
+          {/* <ClientWrapper> */}
+            {children}
+
+          {/* </ClientWrapper> */}
         </ThemeProvider>
       </body>
     </html>
